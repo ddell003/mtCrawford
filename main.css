@@ -1,0 +1,851 @@
+/*--------------------------------------------------------*/
+/*---------------- Navagation Bar-----------------------*/
+/*--------------------------------------------------------*/
+nav {
+ width:100%;
+    position: fixed;
+    top: .8em;
+    height: 6.6em;
+    font-size: 110%;
+    font-weight: bold;
+    //font-family: sans-serif, Verdana;
+    text-align: center;
+    background-color: #719199;
+    margin-left: 0em;
+    padding-right: 2em;
+    margin-right: auto;
+    margin-top: -2em;
+   /* background-image: url(pictures/chrome.png);*/
+    background-size: 100% 100%;
+   display: block;
+  //overflow: hidden;
+padding-top: 1em;
+    margin-bottom: 2em;
+    border-bottom: 2px solid white;
+     z-index:150;
+    font-family: "Acme";
+    
+}
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+    nav ul li {
+     
+    display: inline-block;
+    list-style-type: none;
+    }
+      
+      nav > ul > li > a > .caret {
+        border-top: 4px solid #aaa;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+        -webkit-transition: color 0.1s linear;
+        -moz-transition: color 0.1s linear;
+       	-o-transition: color 0.1s linear;
+          transition: color 0.1s linear; 
+      }
+
+      nav > ul > li > a {
+        color: #FCB94D;
+        display: block;
+        line-height: 56px;
+        padding: 0 24px;
+        text-decoration: none;
+      }
+
+        nav > ul > li:hover {
+          background-color: darkgray;
+        }
+
+        nav > ul > li:hover > a {
+          color:white;
+        }
+
+        nav > ul > li:hover > a > .caret {
+          border-top-color: white;
+        }
+      
+      nav > ul > li > div {
+        background-color: silver;
+        border-top: 0;
+        display: none;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        width: 10em;
+	   visibility: hidden;
+	   z-index: 150;
+        -transition: opacity 0.2s;
+      }
+
+        nav > ul > li:hover > div {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        z-index: 180;
+            height: 100%;
+        }
+ nav > ul > li:hover >.regulation_nav {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        z-index: 180;
+            height: 10em;
+        }
+
+          nav > ul > li > div ul > li {
+            display: block;
+          }
+
+            nav > ul > li > div ul > li > a {
+              color: #fff;
+              display: block;
+              padding: 1em 1.5em;
+              text-decoration: none;
+            }
+
+             nav > ul > li > div ul > li:hover > a {
+                background-color: black;
+}
+/*--------------------------------------------------------*/
+/*---------------- Body-----------------------*/
+/*--------------------------------------------------------*/
+body{
+    background-color: #FCB94D;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+.sidebar_left{
+    position: fixed;
+    top: 5.4em;
+    left:0;
+    width:25%; 
+    height:100%;
+    font-size: 18px;
+    font-family: "Acme";
+}
+.main{
+     position: absolute;
+    top: 5.4em;
+    left:25%;
+    width:50%; 
+    background-color: #FCB94D;
+    
+}
+.main_picture {
+background: url(pictures/bridge.jpg) no-repeat center center;
+background-color:rgba(0, 0, 0, 1); 
+background-size: cover;
+max-width: 900px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+margin-top: -5.5em;
+position: relative;
+right: 0;
+border-bottom:3px solid white;
+border-right: 3px solid white;
+margin-bottom: 0px;
+font-family: 'Handlee',"Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+#services {
+height: 300px;
+margin-top: 0em;
+background-size: cover;
+    
+}
+
+#trash{
+margin-top: -5em;
+background-size: 80%;
+ background-size: cover;   
+background:url(town_pictures/swings_zoomedout.jpg) no-repeat center center; 
+font-family: 'Handlee',"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#reserving{
+margin-top: -1em;
+background-size: 80%;
+ background-size: cover;   
+background:url(town_pictures/house_flag_full.jpg) no-repeat center center; 
+font-family: 'Handlee',"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#water{
+margin-top: -150px;
+height: 600px;
+background-size: 100%;
+ background-size: cover;   
+background:url(town_pictures/waste_treatment.jpg) no-repeat center center; 
+
+}
+#town_limits{
+margin-top: -5em;
+background-size: 80%;
+ background-size: cover;   
+background:url(town_pictures/town_limit_sign.jpg) no-repeat center center; 
+}
+#road{
+margin-top: -5em;
+background-size: 80%;
+ background-size: cover;   
+background:url(town_pictures/clear_sky_and_road.jpg) no-repeat center center; 
+}
+#main_street{
+ margin-top: -5em;
+background-size: 80%;
+ background-size: cover;   
+background:url(pictures/main_street.png) no-repeat center center;
+background-color:rgba(0, 0, 0, 1); 
+background-size: cover;
+max-width: 900px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+margin-top: -5.5em;
+position: relative;
+right: 0;
+border-bottom:3px solid white;
+border-right: 3px solid white;
+margin-bottom: 0px;
+}
+#town_view{
+margin-top: -5em;
+background-size: 80%;
+ background-size: cover;   
+background:url(town_pictures/town_w_mnt.jpg) no-repeat center center; 
+}
+
+.col ul{
+   list-style-type: none;
+    padding-top: 1.8em;
+    text-align: left;
+    padding-left: -.2em;
+    margin-left: 2em;
+    line-height: 2em;
+    font-family: "Acme";
+    font-size: 120%;
+}
+.col ul li{
+    color:#003030;
+    
+}
+.col img{
+    float: left;
+}
+.col{
+    margin-bottom: 3em;
+}
+.main_header {
+    position: relative;
+    top: 20%;
+    text-align: center;
+   
+}
+.main_picture .main_header h1 {
+position: absolute;
+color: #00BFFF;
+font-family: 'Courgette',"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-weight: 500;
+padding-top: 10px;
+font-size: 55px;
+background: rgba(0, 0, 0, 0.5);
+bottom: -410px
+}
+.main_picture .main_header_small h1 {
+position: absolute;
+color: #00BFFF;
+font-family: 'Courgette',"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-weight: 500;
+font-size: 55px;
+background: rgba(0, 0, 0, 0.5);
+bottom: -10px
+}
+.welcome{
+    
+   text-align: left;
+    width:100%;
+    margin-top: -1.5em;
+    background-color:#003030;
+    height: 100%;
+    border-right: 2px solid white;
+    
+     
+    
+}
+.welcome img{
+    width:80%;
+    margin-left: 10%;
+    top:5em;
+    position: relative;
+   
+}
+.welcome header{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Courgette',
+'Cookie', cursive;
+    color:white;
+    font-size: 30px;
+    
+}
+.welcome address{
+    font-family: 'Courgette',
+'Cookie', cursive;
+    font-size: 20px;
+    color: white; 
+}
+
+.padding{
+    padding-left: 25px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.side_address{
+     
+    color:white;
+    
+    top:6em;
+    position: relative;
+    
+}
+.side_nav ul{
+    color:white;
+    padding-top: 3em;
+    
+    
+}
+.foot_nav{
+    height:30em;
+    background-color: #003030;
+    position:absolute;
+    top: 80em;
+    width:75%;
+    margin-left: 25%;
+}
+.foot_nav p{
+    margin-left: 0%;
+    text-align: center;
+}
+.foot_nav img{
+    width:30%;
+    margin-left: 35%;
+    
+}
+.main{
+    padding-bottom: 30em;
+}
+.foot_nav_md{
+    height:30em;
+    background-color: #003030;
+    position:absolute;
+    top: 90em;  
+    width:75%;
+    margin-left: 25%
+} 
+.foot_nav_md img{
+    width:30%;
+    margin-left: 35%;
+    
+}
+.foot_nav_long{
+    height: 30em;
+    background-color: #003030;
+    position:absolute;
+    top: 200em;
+    width:75%;
+    margin-left: 25%;
+    
+}
+.foot_nav_long p{
+    margin-left: 0%;
+    text-align: center;
+}
+.foot_nav_long img{
+    width:30%;
+    margin-left: 35%;
+    
+}
+.side_nav li{
+   text-decoration: none;
+    list-style-type: none;
+}
+.side_nav li ul{
+    padding-top: -1em;
+    margin-top: -2.5em;
+}
+.text-current{
+  color: #FCB94D   
+}
+.content{
+    margin-left: 2em;
+    color:#003030;
+    font-family: "Acme", sans-serif, serif;
+}
+.content h2{
+    //color: #719199;
+    color:#319199;
+}
+.content h3{
+    color: #719199;
+}
+.content h4{
+    //color:#1AB478;
+    color:#719199;
+}
+.content {
+    font-size: 18px;
+    color:#333;
+}
+.content a{
+    color:#333;
+}
+.text-white{
+    color:white;
+}
+.content small{
+    font-size: 15px;
+}
+text-default{
+    color:#333;
+}
+.personnel li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*full screen */
+@media (min-width:720px) {
+    .main .col {
+    width: 33%;
+    margin-left: auto;
+
+    font-family:'Raleway', sans-serif;
+    text-align: center;
+    float: left
+    }
+   .main_picture .main_header h1 {
+    position: absolute;
+    left: 0;
+    right:0;
+    width: 100%;
+    padding-bottom:10px;
+    
+    
+    }
+    .main_picture .main_header_small h1 {
+    position: absolute;
+    left: 1;
+    right:0;
+    width: 100%;
+    padding-bottom:10px;
+    padding-left: 10px;
+    text-align: center;
+    }
+    .sidebar_left{
+    position: fixed;
+    top: 5.4em;
+    left:0;
+    width:25%; 
+    height:100%;
+    
+}
+    .main{
+     position: absolute;
+    top: 5.4em;
+    left:25%;
+    width:50%; 
+    
+    
+}
+    .footer_pic{
+        display: none;
+    }
+    .side_nav ul li {
+    margin-left: -1em;
+    
+}
+    
+    
+    
+    
+}
+
+@media (max-width:719px) {
+    .main .col {
+    width: 33%;
+    margin-left: auto;
+
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    float: left;
+    font-weight: 90:
+    }
+   .main_picture .main_header h1 {
+    position: absolute;
+    left: 0;
+    right:0;
+    width: 100%;
+    padding-bottom:10px;
+    
+    }
+    .foot_nav_long{
+    height: 30em;
+    background-color: #003030;
+    position:absolute;
+    top: 210em;
+    
+    
+}
+    .foot_nav_md{
+    height:30em;
+    background-color: #003030;
+    position:absolute;
+    top: 95em;  
+    width:75%;
+    margin-left: 25%
+}
+    .main_picture .main_header_small h1 {
+    position: absolute;
+    left: 0;
+    right:0;
+    width: 100%;
+    padding-bottom:10px;
+    font-size: 40px; 
+    text-align: center;
+    
+    }
+    .sidebar_left{
+    position: fixed;
+    top: 5.4em;
+    left:0;
+    width:25%; 
+    background-color: #003300;
+    height:100%;
+    font-size: 15px;
+    font-family: "Acme";
+}
+.main{
+     position: absolute;
+    top: 5.4em;
+    left:25%;
+    width:75%; 
+    
+}
+    .col ul{
+   list-style-type: none;
+    padding-top: 1.8em;
+    text-align: left;
+    padding-left: -1em;
+    margin-left:1em;
+    line-height: 2em;
+    
+}
+    .col ul li{
+       font-weight: 80%; 
+    }
+   .main_picture .main_header h1 {
+        font-size: 40px;
+    }
+    .welcome h3{
+    font-size: 20px;
+    
+}
+    nav {
+    top: .4em;
+    height: 7em;
+    padding-right: 0em;
+    margin-right: auto;
+    margin-top: -1em;
+    padding-top: 1em;
+    }
+    nav > ul > li > a {
+        line-height: 40px;
+        padding: 0 10px;
+        text-decoration: none;
+      }
+    .footer_pic{
+        display: none;
+    }
+    .side_nav li ul li{
+    
+}
+    .side_nav ul li {
+    margin-left: -2.5em;
+}
+    .content ul li{
+    color:#003030;
+    margin-left: -1.5em;
+    padding-right: 10px;
+}
+
+}
+
+/* medium screen */
+@media (max-width: 500px) {
+     .main .col {
+    width: 80%;
+    margin-left: 10%;
+    
+
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    float: left;
+    font-weight: 90:
+    }
+   .main_picture .main_header h1 {
+    position: absolute;
+    left: 0;
+    right:0;
+    width: 100%;
+    padding-bottom:10px;
+    
+    }
+    .main_picture .main_header_small h1 {
+    position: absolute;
+    left: 0;
+    right:0;
+    width: 100%;
+    padding-bottom:10px;
+    
+    }
+    .sidebar_left{
+    display: none;
+    position: fixed;
+    top: 5.4em;
+    left:0;
+    width:0%; 
+    background-color: #003300;
+    height:100%;
+}
+.main{
+     position: absolute;
+    top: 5.4em;
+    left:0;
+    width:100%; 
+    //background-color: #003300;
+    
+}
+    .col ul{
+   list-style-type: none;
+    padding-top: 1.8em;
+    text-align: left;
+    padding-left: -1em;
+    margin-left:2em;
+    line-height: 2em;
+        
+    
+}
+    .col ul li{
+       font-weight: 80%; 
+    }
+    .main_picture .main_header h1 {
+        font-size: 40px;
+    }
+    .welcome h3{
+    font-size: 20px;
+    
+}
+    .footer_pic{
+        display: none;
+    }
+    .foot_nav{
+    height:35em;
+    background-color: #003030;
+    position:absolute;
+    top: 100em;
+    width:100%;
+    margin-left: 0;
+}
+    .foot_nav_md{
+    height:30em;
+    background-color: #003030;
+    position:absolute;
+    top:105em;  
+    width:100%;
+    margin-left: 0;
+    
+}
+   .foot_nav_md img{
+    width:80%;
+    margin-left: 10%;
+    
+} 
+.foot_nav img{
+    width:80%;
+    margin-left: 10%;
+    
+}
+    .foot_nav_long{
+    height: 30em;
+    background-color: #003030;
+    position:absolute;
+    top: 245em;
+    width:100%;
+    margin-left: 0;
+    
+}
+.foot_nav_long img{
+    width:80%;
+    margin-left: 10%;
+    
+}
+  
+
+}
+/* small screen */
+@media (max-width: 300px) {
+    .main_header {
+    position: relative;
+    top: 58%;
+    text-align: center;
+    font-weight: 80%;
+        
+    
+   
+    }
+    .foot_nav{
+    height:35em;
+    background-color: #003030;
+    position:absolute;
+    top: 120em;
+    width:100%;
+}
+.foot_nav img{
+    width:80%;
+    margin-left: 10%;
+    
+}
+    .foot_nav_long{
+    height: 30em;
+    background-color: #003030;
+    position:absolute;
+    top: 280em;
+    width:100%;
+    
+}
+    .foot_nav_md{
+    height:30em;
+    background-color: #003030;
+    position:absolute;
+    top:120em;  
+    width:100%;
+    margin-left: 0;
+    
+}
+    .foot_nav_md img{
+    width:80%;
+    margin-left: 10%;
+    
+}
+
+    
+    .main_picture .main_header h1 {
+    position: absolute;
+    color: #00BFFF;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 30px;
+    //background: rgba(0, 0, 0, 0.5);
+    background-color: black;
+    bottom: -215px
+    
+    }
+        
+    .main_picture {
+    background: url(pictures/bridge.jpg) no-repeat center center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 0;
+    margin-top: -6em;
+
+    }
+    #main_street{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 0;
+    margin-top: -3em;  
+    height:20em
+    }
+    .main .col {
+    margin-top:5em;
+    width: 100%;
+    margin-left: auto;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    float: left;
+    font-weight: 90:
+    }
+   .main_picture .main_header h1 {
+    position: absolute;
+
+    left: 0;
+    right:0;
+    ;
+    width: 100%;
+    padding-bottom:10px;
+    
+    }
+    .main_picture .main_header_small h1 {
+    position: absolute;
+    left: 0;
+    right:0;
+    width: 100%;
+    padding-bottom:10px;
+    font-size: 30px;
+    }
+    .sidebar_left{
+    display: none;
+    position: fixed;
+    top: 5.4em;
+    left:0;
+    width:0%; 
+    background-color: #003300;
+    height:100%;
+}
+.main{
+     position: absolute;
+    top: 5.4em;
+    left:0;
+    width:100%; 
+    
+}
+    .col ul{
+   list-style-type: none;
+    padding-top: 1.8em;
+    text-align: left;
+    padding-left: -1em;
+    margin-left:2em;
+    line-height: 2em;
+        
+    
+}
+    .col ul li{
+       font-weight: 80%;
+        
+    }
+    
+  .footer_pic{
+        color: white;
+    }
+    #trash, #town_limits #town_view{
+        margin-top: -5em;
+        background-size: 80%;
+        height: 300px;
+         background-size: cover;   
+        background:url(pictures/bridge.jpg) no-repeat center center; 
+        }
+    
+   
+    
+}

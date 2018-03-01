@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <!--<link href='../style.css' rel='stylesheet' type='text/css'>-->
+    <link type="text/css" rel="stylesheet" href="../main.css">
+    <link type="text/css" rel="stylesheet" href="../bootstrap-social.css">
+    <link type="text/css" rel="stylesheet" href="../font-awesome.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Handlee|Acme|Courgette' rel='stylesheet' type='text/css'>
+      
+      <title>Mount Crawford: Building And Construction</title>
+     <meta name="description" content="Welcome to Mount Crawford Virginia, a quiet little town neslted in the beautiful Shenandoah Valley. Most building and construction projects require some kind of permission from the town before the project can begin " />
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77021900-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Latest compiled and minified jquery JavaScript -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>      
+<!-- Latest compiled and minified Boot Strap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+    <body>
+        <style>
+            p{
+                margin: 0px 0px 0px;
+            }
+            .main{
+                width: 75%;
+            }
+        
+        </style>
+        <!--Navigation Bar -->
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="../services/trash_services.html">Services<span class="caret"></span></a>
+                    <div>
+                        <ul >
+                            <!--Services Contents with links -->
+                            <a href="../services/trash_services.html"><li class="text-primary">Trash Services</li></a>
+                            <a href="../services/water_sewer.html"><li class="text-primary">Water &amp; Sewer</li></a>
+                            <a href="../services/reserving_facilities.html"><li class="text-primary">Reserving Facilities</li></a>
+                            <a href="../services/emergency_services.html"><li class="text-primary">Emergency Services</li></a>
+                        </ul>
+                    </div>
+                
+                </li>   
+                <li>
+                    <a href="#">Reference<span class="caret"></span></a>
+                    <div class="regulation_nav">
+                        <ul>
+                            <!--Regulations Contents with links -->
+                            <a href="budget.html"><li>Budget</li></a>
+                            <a href="building_construction.html"><li>Building &amp; Zoning</li></a>
+                            <a href="business_license.html"><li>Business Licenses</li></a>
+                            <a href="regulations.html"><li class="text-primary">Codes and Ordinances</li></a>
+                            <br><a href="maps.html"><li>Maps</li></a>
+                            <a href="personal_property_taxes.html"><li>Personal Property Taxes</li></a>
+                            <a href="real_estate_taxes.html"><li>Real Estate Taxes</li></a>
+                            
+                        </ul>
+                    </div>
+                
+                </li>
+                <li>
+                    <a href="../directory/town_personnel.html">Directory<span class="caret"></span></a>
+                    <div>
+                        <ul>
+                            <!--Directory Contents with links -->
+                            <a href="../directory/boards_commissions.html"><li>Boards &amp; Commissions</li></a>
+                            <a href="../directory/town_personnel.html"><li>Town Council</li></a>
+                        </ul>
+                    </div>
+                </li>
+                <!--<li><a href="#">About</a></li>-->
+            </ul>  
+        </nav>
+        <div class="wrapper">
+            <aside class="sidebar_left">
+                <div class="welcome">
+                    <aside class="side_nav">
+                        <ul>
+                            <li>Services
+                                <ul >
+                                    <!--Services Contents with links -->
+                                    <a href="../services/emergency_services.html"><li class="text-primary">Emergency Services</li></a>
+                                    <a href="../services/reserving_facilities.html"><li class="text-primary">Reserving Facilities</li></a>
+                                    <a href="../services/trash_services.html"><li class="text-primary">Trash Services</li></a>
+                                    <a href="../services/water_sewer.html" ><li class="text-primary">Water &amp; Sewer</li></a>
+
+                                </ul>       
+                            </li>
+                            <li>Reference
+                                <ul>
+                                    <!--Regulations Contents with links -->
+                                    <a href="budget.html"><li class="text-current">Budget</li></a>
+                                    <a href="building_construction.html"><li class="text-primary">Building &amp; Zoning</li></a>
+                                    <a href="business_license.html"><li class="text-primary">Business Licenses</li></a>
+                                    <a href="regulations.html"><li class="text-primary">Codes and Ordinances</li></a>
+                                    <a href="maps.html"><li>Maps</li></a>
+                                    <a href="personal_property_taxes.html"><li class="text-primary">Personal Property Taxes</li></a>
+                                    <a href="real_estate_taxes.html"><li class="text-primary">Real Estate Taxes</li></a>     
+                                </ul>
+                            </li>
+                            <li>Directory
+                                <ul>
+                                    <!--Directory Contents with links -->
+                                    <a href="../directory/boards_commissions.html"><li>Boards &amp; Commissions</li></a>
+                                    <a href="../directory/town_personnel.html"><li>Town Council</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </aside>
+            <div class="main ">
+                
+                
+            <div class="content ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Budget</h2>
+                           
+                        <div>
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#y_2016" aria-controls="y_2016" role="tab" data-toggle="tab">2016-2017</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#y_2017" aria-controls="y_2017" role="tab" data-toggle="tab">2017-2018</a>
+                                
+                                </li>
+                                
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="y_2016">
+                                    
+                                    <br>
+                                    
+                                    <div class="col-lg-5 col-sm-12" style="border: solid 3px #ccc;">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <h3>Expenses:</h3>  
+                                            <br>
+                                            <p>Advertising</p>
+                                            <p>Annexation Cost</p>
+                                            <p>Audit</p>
+                                            <p>Carter Bank Loan</p>
+                                            <p>Central Shen</p>
+                                            <p>Council Pay</p>
+                                            <p>Court Appt. Attorney</p>
+                                            <p>Electric</p>
+                                            <p>Fire Department</p>
+                                            <p>FmHA Loan</p>
+                                            <p>Gift</p>
+                                            <p>Insurance Bond & Liability</p>
+                                            <p>Labor</p>
+                                            <p>Legal Fees</p>
+                                            <p>Miscellaneous</p>
+                                            <p>MPO</p>
+                                            <p>Police Services</p>
+                                            <p>Sewer</p>
+                                            <p>Sidewalk/Alley</p>
+                                            <p>Supplies</p>
+                                            <p>Survey</p>
+                                            <p>Trash Collection</p>
+                                            <p>Treasurer Pay</p>
+                                            <p>VML Dues</p>
+                                            <p>Water</p>
+                                            <h4>Total</h4>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <br>
+                                            <h3>Budget</h3>
+                                            <p>$1,300.00 </p>
+                                            <p>$0.00</p> 
+                                            <p>$0.00</p> 
+                                            <p>$0.00 </p>
+                                            <p>$2,300.00</p> 
+                                            <p>$2,100.00 </p>
+                                            <p>$200.00</p> 
+                                            <p>$9,000.00</p> 
+                                            <p>$10,000.00</p> 
+                                            <p>$17,300.00</p> 
+                                            <p>$500.00</p> 
+                                            <p> $1,500.00 </p>
+                                            <p>$500.00</p> 
+                                            <p>$7,000.00</p> 
+                                            <p>$1,000.00</p> 
+                                            <p>$2,000.00</p> 
+                                            <p>$47,000.00</p> 
+                                            <p>$36,000.00</p> 
+                                            <p>$4,500.00</p> 
+                                            <p>$4,500.00</p> 
+                                            <p> $0.00</p> 
+                                            <p>$35,000.00</p> 
+                                            <p>$7,200.00</p> 
+                                            <p>$500.00</p> 
+                                            <p>$65,000.00</p> 
+                                            <h4>$254,400.00</h4> 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-sm-12 col-lg-offset-1" style="border: solid 3px #ccc;">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <h3>Income:</h3><br>
+                                            <p>ABC</p>
+                                            <p>Business Licenses</p>
+                                            <p>Car Tax</p>
+                                            <p>Donation</p>
+                                            <p>Fines</p>
+                                            <p>Fire Program</p>
+                                            <p>Interest</p>
+                                            <p>Local Sales Tax</p>
+                                            <p>Meals Tax</p>
+                                            <p>Personal Property Tax</p>
+                                            <p>Real Estate Tax</p>
+                                            <p>Restitution</p>
+                                            <p>Sidewalk/Alley</p>
+                                            <p>Surety Bonds</p>
+                                            <p>Utility Tax</p>
+                                            <p>Vehicle Decals</p>
+                                            <p>Water Connection</p>
+                                            <p>Water/Trash/Sewer Income</p>
+                                            <p>Zoning/Building Permit</p>
+                                            <h4>Total</h4>
+                                            
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <br><h3>Budget:</h3>
+                                            <p>$0.00</p> 
+                                            <p>$650.00</p> 
+                                            <p>$1,500.00</p> 
+                                            <p>$0.00</p> 
+                                            <p>$4,000.00 </p>
+                                            <p>$10,000.00</p> 
+                                            <p>$0.00 </p>
+                                            <p>$14,500.00 </p>
+                                            <p>$55,000.00 </p>
+                                            <p>$12,000.00</p> 
+                                            <p>$23,000.00</p> 
+                                            <p>$3,600.00</p> 
+                                            <p>$0.00</p> 
+                                            <p>$0.00 </p>
+                                            <p>$5,000.00 </p>
+                                            <p>$0.00 </p>
+                                            <p>$5,000.00 </p>
+                                            <p>$120,000.00</p> 
+                                            <p>$150.00</p> 
+                                            <h4>$254,400.00 </h4>
+                                            
+                                        </div>
+                                    </div>                                
+                                
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="y_2017">
+                                    <br>
+                                    <div class="col-lg-5 col-sm-12" style="border: solid 3px #ccc;">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <h3>Expenses: <span class="pull-right">Budget</span></h3>  
+                                            <br>
+                                            
+                                            <p>Advertising <span class="pull-right">$1,200.00</span></p>
+                                            <p>Annexation Cost <span class="pull-right">$0.00</span></p>
+                                            <p>Audit <span class="pull-right">$0.00</span></p>
+                                            <p>Central Shen <span class="pull-right">$0.00</span></p>
+                                            <p>Council Pay <span class="pull-right">$2,300.00</span></p>
+                                            <p>Court Appt. Attorney <span class="pull-right">$200.00</span></p>
+                                            <p>Electric <span class="pull-right">$7,500.00</span></p>
+                                            <p>Fire Department <span class="pull-right">$10,000.00</span></p>
+                                            <p>FmHA Loan <span class="pull-right">$15,000.00</span></p>
+                                            <p>Gift <span class="pull-right">$1,000.00</span></p>
+                                            <p>Insurance Bond & Liability <span class="pull-right">$1,500.00</span></p>
+                                            <p>Labor <span class="pull-right">$500.00</span></p>
+                                            <p>Legal Fees <span class="pull-right">$4,000.00</span></p>
+                                            <p>Miscellaneous <span class="pull-right">$1,000.00</span></p>
+                                            <p>MPO <span class="pull-right">$0.00</span></p>
+                                            <p>Police Services <span class="pull-right">$47,000.00</span></p>
+                                            <p>Property Improv. Grant <span class="pull-right">$10,000.00</span></p>
+                                            <p>Sewer <span class="pull-right">$20,000.00</span></p>
+                                            <p>Sidewalk/Alley <span class="pull-right">$35,000.00</span></p>
+                                            <p>Supplies <span class="pull-right">$4,500.00</span></p>
+                                            <p>Technology <span class="pull-right">$2,500.00</span></p>
+                                            <p>Trash Collection <span class="pull-right">$35,000.00</span></p>
+                                            <p>Treasurer Pay <span class="pull-right">$7,600.00</span></p>
+                                            <p>VML Dues <span class="pull-right">$400.00</span></p>
+                                            <p>Water <span class="pull-right">$50,000.00</span></p>
+                                            <p>Zoning Admin. Pay <span class="pull-right">$6,000.00</span></p>
+                                            
+                                            <h4>Total <span class="pull-right">$262,200.00</span></h4>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-lg-5 col-sm-12 col-lg-offset-1" style="border: solid 3px #ccc;">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <h3>Income: <span class="pull-right">Budget</span></h3><br>
+                                            <p></p>
+                                            <p>Business Licenses <span class="pull-right"> $600.00</span></p>
+                                            <p>Contingency/Carryover <span class="pull-right"> $20,000.00</span></p>
+                                            <p>Car Tax <span class="pull-right">$1,400.00</span></p>
+                                            <p>Donation <span class="pull-right">$0.00</span></p>
+                                            <p>Fines <span class="pull-right">$2,000.00</span></p>
+                                            <p>Fire Program <span class="pull-right">$10,000.00</span></p>
+                                            <p>Interest <span class="pull-right">$100.00</span></p>
+                                            <p>Local Sales Tax <span class="pull-right">$15,000.00</span></p>
+                                            <p>Meals Tax <span class="pull-right">$55,000.00</span></p>
+                                            <p>Personal Property Tax <span class="pull-right">$12,000.00</span></p>
+                                            <p>Real Estate Tax <span class="pull-right">$23,000.00</span></p>
+                                            <p>Restitution <span class="pull-right">$3,000.00</span></p>
+                                            <p>Surety Bonds <span class="pull-right">$0.00</span></p>
+                                            <p>Utility Tax <span class="pull-right">$5,000.00</span></p>
+                                            <p>Water Connection <span class="pull-right">$0.00</span></p>
+                                            <p>Water/Trash/Sewer Income <span class="pull-right">$115,000.00</span></p>
+                                            <p>Zoning/Building Permit <span class="pull-right">$100.00</span></p>
+                                            <h4>Total <span class="pull-right">$262,200.00</span></h4>
+                                            
+                                        </div>
+                                       
+                                       
+                                        
+                                        
+                                       
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <br><h3>Budget:</h3>
+                                            <p></p>
+                                            <h4>$254,400.00 </h4>
+                                            
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                                <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                            </div>
+
+                        </div>
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                
+                </div>
+                
+            </div>
+            <br><br>   
+            </div>
+        <div class="col-md-12  foot_nav_long">
+                <div class="col-md-8 col-md-offset-3 col-sm-6 col-sm-offset-3 text-white">
+                    <br>
+                    <p><small>The information contained on this page is for general purposes only and may not contain the most current information. For answers to more specific questions or concerns, or to receive the latest information possible, please call (540) 421-7927</p><br>
+                        <p>&copy;Town of Mt. Crawford | PO Box 187 |
+Mt. Crawford, VA 22841 | Web Designed by Parker Dell | 2016</small></p>
+            <img src="../pictures/main_street.png" alt="main street" class="img-circle">
+                </div>
+                
+            </div>
+        </div>
+    </body>
+
+
+</html>

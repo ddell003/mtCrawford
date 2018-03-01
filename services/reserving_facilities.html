@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <!--<link type="text/css" rel="stylesheet" href="../main.css"> -->
+    <link type="text/css" rel="stylesheet" href="../new.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap-social.css">
+    <link type="text/css" rel="stylesheet" href="font-awesome.css"> 
+      <link href='https://fonts.googleapis.com/css?family=Handlee|Acme|Courgette' rel='stylesheet' type='text/css'>
+      <title>Mount Crawford: Reserving Facilities</title>
+     <meta name="description" content="Welcome to Mount Crawford Virginia, a quiet little town neslted in the beautiful Shenandoah Valley. " />
+      <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77021900-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </head>
+    <body>
+        <!--Navigation Bar -->
+        <nav id="menu">
+            <ul >
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Services<span class="caret"></span></a>
+                    <div>
+                        <ul >
+                            <!--Services Contents with links -->
+                            <a href="emergency_services.html"><li class="text-primary">Emergency Services</li></a>
+                            <a href="reserving_facilities.html"><li class="text-primary">Reserving Facilities</li></a>
+                            <a href="trash_services.html"><li class="text-primary">Trash Services</li></a>
+                            <a href="water_sewer.html" ><li class="text-primary">Water &amp; Sewer</li></a>
+
+                        </ul>
+                    </div>
+                
+                </li>   
+                <li>
+                    <a href="../regulations/personal_property_taxes.html">Reference<span class="caret"></span></a>
+                    <div class="regulation_nav">
+                        <ul>
+                            <!--Regulations Contents with links -->
+                            <a href="../regulations/budget.html"><li>Budget</li></a>
+                            <a href="../regulations/building_construction.html"><li>Building &amp; Zoning</li></a>
+                            <a href="../regulations/business_license.html"><li>Business Licenses</li></a>
+                            <a href="../regulations/regulations.html"><li class="text-primary">Codes and Ordinances</li></a>
+                            <br>
+                            <a href="../regulations/maps.html"><li class="text-primary">Maps</li></a>
+                            <a href="../regulations/personal_property_taxes.html"><li>Personal Property Taxes</li></a>       
+                            
+                            <a href="../regulations/real_estate_taxes.html"><li>Real Estate Taxes</li></a>
+                            <a href="../regulations/regulations.html"><li class="text-primary">Regulations</li></a>
+                            
+                        </ul>
+                    </div>
+                
+                </li>
+                <li>
+                    <a href="../directory/town_personnel.html">Directory<span class="caret"></span></a>
+                    <div>
+                        <ul>
+                            <!--Directory Contents with links -->
+                            <a href="../directory/boards_commissions.html"><li>Boards &amp; Commissions</li></a>
+                            <a href="../directory/town_personnel.html"><li>Town Council</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </ul>  
+        </nav>
+        <div class="wrapper" style="height: 100%; margin-bottom: 30em; padding-bottom:30px;">
+            <aside class="sidebar_left col-lg-3 hidden-xs hidden-sm">
+                <div class="welcome">
+                    <aside class="side_nav">
+                        <ul>
+                            
+                            <li>Services
+                                <ul >
+                                    <!--Services Contents with links -->
+                                    <a href="emergency_services.html"><li class="text-primary">Emergency Services</li></a>
+                                    <a href="reserving_facilities.html"><li class="text-current">Reserving Facilities</li></a>
+                                    <a href="trash_services.html"><li class="text-primary">Trash Services</li></a>
+                                    <a href="water_sewer.html"><li class="text-primary">Water &amp; Sewer</li></a>
+
+                                </ul>       
+                            </li>
+                            <li>Reference
+                                <ul>
+                                    <!--Regulations Contents with links -->
+                                    <a href="../regulations/budget.html"><li>Budget</li></a>
+                                    <a href="../regulations/building_construction.html"><li>Building &amp; Zoning</li></a>
+                                    <a href="../regulations/business_license.html"><li>Business Licenses</li></a>
+                                    <a href="../regulations/regulations.html"><li class="text-primary">Codes and Ordinances</li></a>
+                                    <a href="../regulations/maps.html"><li class="text-primary">Maps</li></a>
+                                    <a href="../regulations/personal_property_taxes.html"><li>Personal Property Taxes</li></a>
+                                    <a href="../regulations/real_estate_taxes.html"><li>Real Estate Taxes</li></a>
+                                    <a href="../regulations/regulations.html"><li class="text-primary">Regulations</li></a>
+
+
+                                </ul>
+                            </li>
+                            <li>Directory
+                                <ul>
+                                    <!--Directory Contents with links -->
+                                    <a href="../directory/boards_commissions.html"><li>Boards &amp; Commissions</li></a>
+                                    <a href="../directory/town_personnel.html"><li>Town Council</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </aside>
+            <div class="main col-lg-9 col-lg-offset-3 col-sm-12 col-sm-offset-0" style="padding-left:0px;">
+                <div class="main_picture col-md-12 col-sm-12" id="reserving">
+                        <div class="main_header_small">
+                            <h1 class="blue">Town of Mount Crawford</h1>  
+                        </div>
+                    
+                </div>
+                
+                <div class="content col-lg-12">
+                    <div class="col-lg-12">
+                        <h2>Reserving Facilities</h2>
+                        <h3>Mount Crawford Ruritan Hall Rental Information</h3>
+                    </div>
+                    <div class="col-lg-4 col-sm-12" style="margin-top:15px">
+                        <figure style="width:50%" class="hidden-sm hidden-xs"><img src="../town_pictures/pavilion_1.jpg" width="300" height="200" alt="pavillion"></figure><br>
+
+                        <figure class="hidden-sm hidden-xs" ><img src="../town_pictures/pavillion_2.jpg" width="300" height="200" alt="pavillion"></figure>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-2 col-sm-12">
+
+                        <h4>Hall Availability:</h4>
+                    <p>Friday &amp; Saturday 8:00 am &#45; Midnight </p>
+                    <p>Sunday &#45; Thursday 8:00 am &#45; 10:00 pm</p>
+                    <p><small>All Music/Bands/Noise ends at 10:30 pm</small></p>
+                    <p><small>No Alcohol or Smoking in the Hall</small></p>
+
+                        <div class="hidden-sm hidden-xs"><br><br></div>   
+                    <h4>Contact and More information:</h4>
+                    <p>For more information or to make reservations, contact Chris
+
+    Campbell<br> 540-438- 0213/540-908- 1580</p>
+                    </div>
+
+
+
+
+                </div>
+                <br><br> 
+            </div>
+            
+        </div>
+        <div class="col-lg-9 col-md-12 col-lg-offset-3 foot_nav_md navbar navbar-default navbar-fixed-bottom col-sm-12" style="top:90em" id="footer">
+                <div class="col-md-8 col-md-offset-3 col-sm-6 col-sm-offset-3 text-white">
+                    <br>
+                    <p><small>The information contained on this page is for general purposes only and may not contain the most current information. For answers to more specific questions or concerns, or to receive the latest information possible, please call (540) 421-7927</small></p><br>
+                    <p><small>&copy;Town of Mt. Crawford | PO Box 187 |
+Mt. Crawford, VA 22841 | Web Designed by Parker Dell | 2016</small></p>
+            <img src="../pictures/main_street.png" alt="main street" class="img-circle">
+                </div>
+            
+            </div>
+    </body>
+       <script>
+
+  $(document).ready(function() {
+
+   var docHeight = $('.wrapper').height();
+   var footerHeight = $('#footer').height();
+   var footerTop = $('#footer').position().top + footerHeight;
+
+   if (footerTop < docHeight) {
+    $('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
+   }
+  });
+ </script>
+
+
+</html>
